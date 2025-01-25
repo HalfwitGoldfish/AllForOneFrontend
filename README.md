@@ -28,6 +28,8 @@
   Maintain a consistent design theme across all pages to ensure a seamless user experience.
  
 
-*Reviewer's Name*: 
+*Reviewer's Name*: Juan Heredia
 
-*Peer Review*: 
+*Peer Review*: Really nice site!, the planet and space theme really works well with the simplictic buttons and input fields, and responsiveness works mostly.
+in adding two numbers, asking questions, Greater or less, and MadLib the background starts to act weird when transitiong into mobile (around 720 - 900 pixels).
+Also the API for madlib doesnt seem to be working, as it gives me a console error when I use it.
