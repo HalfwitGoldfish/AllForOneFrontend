@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Reverse It Numeric</title>
+</head>
+<body class="bg-[url('/assets/Uranus.jpg')] bg-no-repeat bg-cover m-0">
+    
+    <div class="h-[100vh] grid grid-rows-9">
+        <FirstRow class="grid">
+            <HomeBtn class="-row-start-1">
+                <a href="/index.html">
+                    <button class="text-white mt-[32px] ml-[32px] bg-black/40 w-[119px] h-[70px] border font-bold text-[20px] rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white hover:bg-white/10 hover:cursor-pointer max-[720px]:w-[75px] max-[720px]:h-[50px]">
+                        <p>Home</p>
+                    </button>
+                </a>
+            </HomeBtn>
+    
+            <div class="text-white flex justify-end text-[64px] font-bold mt-[45px] mr-[85px] text-right row-start-1 max-[720px]:text-[32px]">
+                <h1>Reverse It<br>Numeric</h1>
+            </div>
+        </FirstRow>
+
+        <SecondRow class="row-start-5 flex justify-center max-[720px]:row-start-4">
+            <div id="uranusBox" class="text-white bg-black/40 w-[277px] h-[128px] border rounded-[5px] ml-[10px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white m-0 hidden">
+                <div class="font-bold text-[20px] text-center mt-[15px]">
+                    <p id="uranusText" class="m-[10px]">temp</p>
+                </div>
+            </div>
+        </SecondRow>
+
+        <ThirdRow class="row-start-7">
+            <div class="text-white flex justify-center">
+                <input
+                    id="uranusNum"
+                    class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                    placeholder="Input Numbers"
+                    type="text"
+                />
+            </div>
+            <div class="text-white flex justify-center mt-[5px]">
+                <button id="uranusBtn" class="w-[170px] h-[70px] bg-black/40 rounded-[5px] border shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white font-bold text-[48px] flex justify-center m-0 hover:bg-white/10 hover:cursor-pointer">
+                    <p>Press!</p>
+                </button>
+            </div>
+        </ThirdRow>
+
+        <FourthRow class="row-start-9">
+            <div class="text-white text-[40px] font-bold min-[720px]:ml-[120px] flex justify-start opacity-[80%] max-[720px]:flex max-[720px]:justify-center">
+                <h2>Uranus</h2>
+            </div>
+        </FourthRow>
+    </div>
+
+    <script src="/scripts/uranus.js"></script>
+</body>
+</html>
