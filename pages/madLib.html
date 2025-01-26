@@ -24,7 +24,7 @@
         </FirstRow>
 
         <SecondRow class="row-start-3 flex justify-center">
-            <div id="marsBox" class="text-white bg-black/40 w-[600px] h-[148px] border rounded-[5px] ml-[10px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white m-0 hidden">
+            <div id="marsBox" class="text-white bg-black/40 w-[600px] h-[148px] border rounded-[5px] ml-[10px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white m-0 hidden max-[720px]:w-[420px] max-[720px]:h-[200px]">
                 <div class="font-bold text-[20px] text-center mt-[15px]">
                     <p id="marsText" class="m-[10px]">temp</p>
                 </div>
@@ -111,86 +111,105 @@
                     <p>Press!</p>
                 </button>
             </div>
-            <div class="text-white flex justify-center gap-[5px] mt-[4px]">
-                <input
-                    id="mars2Animal"
-                    class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
-                    placeholder="Input Animal"
-                    type="text"
-                />
-            </div>
-            <div class="text-white flex justify-center gap-[5px]">
-                <input
-                    id="mars2Name"
-                    class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
-                    placeholder="Input Name"
-                    type="text"
-                />
-            </div>
-            <div class="text-white flex justify-center gap-[5px] mt-[4px]">
-                <input
-                    id="mars2Food"
-                    class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
-                    placeholder="Input Food"
-                    type="text"
-                />
-            </div>
-            <div class="text-white flex justify-center gap-[5px] mt-[4px]">
-                <input
-                    id="mars2Toy"
-                    class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
-                    placeholder="Input Toy"
-                    type="text"
-                />
-            </div>
-            <div class="text-white flex justify-center gap-[5px] mt-[4px]">
-                <input
-                    id="mars2Age"
-                    class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
-                    placeholder="Input Age"
-                    type="text"
-                />
-            </div>
-            <div class="text-white flex justify-center gap-[5px] mt-[4px]">
-                <input
-                    id="mars2Animal2"
-                    class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
-                    placeholder="Input Second Animal"
-                    type="text"
-                />
-            </div>
-            <div class="text-white flex justify-center gap-[5px] mt-[4px]">
-                <input
-                    id="mars2Name2"
-                    class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
-                    placeholder="Input Second Name"
-                    type="text"
-                />
-            </div>
-            <div class="text-white flex justify-center gap-[5px] mt-[4px]">
-                <input
-                    id="mars2Food2"
-                    class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
-                    placeholder="Input Second Food"
-                    type="text"
-                />
-            </div>
-            <div class="text-white flex justify-center gap-[5px] mt-[4px]">
-                <input
-                    id="mars2Toy2"
-                    class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
-                    placeholder="Input Second Toy"
-                    type="text"
-                />
-            </div>
-            <div class="text-white flex justify-center gap-[5px] mt-[4px]">
-                <input
-                    id="mars2Age2"
-                    class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
-                    placeholder="Input Second Age"
-                    type="text"
-                />
-            </div>
+            <selectionBtns>
+                <div class="text-white flex justify-center mb-[4px]">
+                    <button id="page1Btn" class="w-[65px] h-[65px] bg-black/40 rounded-[5px] border shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white font-bold text-[40px] flex justify-center m-0 hover:bg-white/10 hover:cursor-pointer">
+                        <p>1</p>
+                    </button>
+                    <button id="page2Btn" class="w-[65px] h-[65px] bg-black/40 rounded-[5px] border shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white font-bold text-[40px] flex justify-center m-0 hover:bg-white/10 hover:cursor-pointer">
+                        <p>2</p>
+                    </button>
+                    <button id="page3Btn" class="w-[65px] h-[65px] bg-black/40 rounded-[5px] border shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white font-bold text-[40px] flex justify-center m-0 hover:bg-white/10 hover:cursor-pointer">
+                        <p>3</p>
+                    </button>
+                </div>
+            </selectionBtns>
+            <SelectionOne id="selection1">
+                <div class="text-white flex justify-center gap-[5px] mt-[4px]">
+                    <input
+                        id="mars2Animal"
+                        class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                        placeholder="Input Animal"
+                        type="text"
+                    />
+                </div>
+                <div class="text-white flex justify-center gap-[5px]">
+                    <input
+                        id="mars2Name"
+                        class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                        placeholder="Input Name"
+                        type="text"
+                    />
+                </div>
+                <div class="text-white flex justify-center gap-[5px] mt-[4px]">
+                    <input
+                        id="mars2Food"
+                        class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                        placeholder="Input Food"
+                        type="text"
+                    />
+                </div>
+                <div class="text-white flex justify-center gap-[5px] mt-[4px]">
+                    <input
+                        id="mars2Toy"
+                        class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                        placeholder="Input Toy"
+                        type="text"
+                    />
+                </div>
+            </SelectionOne>
+            <SelectionTwo id="selection2" class="hidden">
+                <div class="text-white flex justify-center gap-[5px] mt-[4px]">
+                    <input
+                        id="mars2Age"
+                        class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                        placeholder="Input Age"
+                        type="text"
+                    />
+                </div>
+                <div class="text-white flex justify-center gap-[5px] mt-[4px]">
+                    <input
+                        id="mars2Animal2"
+                        class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                        placeholder="Input Second Animal"
+                        type="text"
+                    />
+                </div>
+                <div class="text-white flex justify-center gap-[5px] mt-[4px]">
+                    <input
+                        id="mars2Name2"
+                        class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                        placeholder="Input Second Name"
+                        type="text"
+                    />
+                </div>
+                <div class="text-white flex justify-center gap-[5px] mt-[4px]">
+                    <input
+                        id="mars2Food2"
+                        class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                        placeholder="Input Second Food"
+                        type="text"
+                    />
+                </div>
+            </SelectionTwo>
+            <SelectionThree id="selection3" class="hidden">
+                <div class="text-white flex justify-center gap-[5px] mt-[4px]">
+                    <input
+                        id="mars2Toy2"
+                        class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                        placeholder="Input Second Toy"
+                        type="text"
+                    />
+                </div>
+                <div class="text-white flex justify-center gap-[5px] mt-[4px]">
+                    <input
+                        id="mars2Age2"
+                        class="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/40 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                        placeholder="Input Second Age"
+                        type="text"
+                    />
+                </div>
+            </SelectionThree>
         </MobileThirdRow>
 
         <FourthRow class="row-start-9">
@@ -201,5 +220,6 @@
     </div>
 
     <script src="/scripts/mars.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
 </body>
 </html>

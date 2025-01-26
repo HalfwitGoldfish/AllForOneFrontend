@@ -24,6 +24,14 @@ const mars2Food2 = document.getElementById( "mars2Food2" );
 const mars2Toy2 = document.getElementById( "mars2Toy2" );
 const mars2Age2 = document.getElementById( "mars2Age2" );
 
+const page1Btn = document.getElementById( "page1Btn" );
+const page2Btn = document.getElementById( "page2Btn" );
+const page3Btn = document.getElementById( "page3Btn" );
+
+const selection1 = document.getElementById( "selection1" );
+const selection2 = document.getElementById( "selection2" );
+const selection3 = document.getElementById( "selection3" );
+
 marsBtn.addEventListener ( "click", async () =>
     {
         let animal = marsAnimal.value;
@@ -42,7 +50,7 @@ marsBtn.addEventListener ( "click", async () =>
         marsBox.classList.remove("hidden");
     });
 
-marsBtn.addEventListener ( "click", async () =>
+mars2Btn.addEventListener ( "click", async () =>
     {
         let animal = mars2Animal.value;
         let name = mars2Name.value;
@@ -58,4 +66,25 @@ marsBtn.addEventListener ( "click", async () =>
         const data = await response.text();
         marsText.innerText = data;
         marsBox.classList.remove("hidden");
+    });
+
+page1Btn.addEventListener ( "click", async () =>
+    {
+        selection1.classList.remove("hidden");
+        selection2.classList.add("hidden");
+        selection3.classList.add("hidden");
+    });
+
+page2Btn.addEventListener ( "click", async () =>
+    {
+        selection1.classList.add("hidden");
+        selection2.classList.remove("hidden");
+        selection3.classList.add("hidden");
+    });
+
+page3Btn.addEventListener ( "click", async () =>
+    {
+        selection1.classList.add("hidden");
+        selection2.classList.add("hidden");
+        selection3.classList.remove("hidden");
     });
